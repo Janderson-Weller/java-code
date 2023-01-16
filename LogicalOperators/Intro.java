@@ -10,12 +10,18 @@ public class Intro {
             System.out.println("Digite sua idade: ");
             Integer idade = dados.nextInt();
             dados.nextLine();
-
-            if(idade > 18) {
+            
+            if(idade < 18) {
+                System.out.printf("Poxa %s, voce ainda nao tem idade suficiente", nome);
+            }
+            else if (idade > 18) {
                 System.out.printf("Parabens %s, voce ja eh maior de idade!", nome);
+            } 
+            else if (idade > 25 && idade < 40) {
+                System.out.println("Você está na meia idade!");
             }
             else {
-                System.out.printf("Poxa %s, voce ainda nao tem idade suficiente", nome);
+                System.out.println("Vocês está na terceira idade!");
             }
         }
     }
