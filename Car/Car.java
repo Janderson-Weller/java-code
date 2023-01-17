@@ -33,4 +33,25 @@ public class Car {
     public String getColor() {
         return this.color;
     }
+
+    public void setGear(int gear) {
+        this.gear += 1;
+    }
+
+    public int getGear() {
+        return this.gear;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+    
 }
