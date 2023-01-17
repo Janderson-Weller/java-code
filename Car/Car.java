@@ -10,14 +10,16 @@ public class Car {
     private boolean manualGear = true;
     private int seat;
     private Date dateManufacture;
+    private String category;
     
-    public Car(String manufacturer, String color, String fuel){
+    public Car(String manufacturer, String color, String fuel, String category){
         this.manufacturer =  manufacturer;
         this.color = color;
         this.fuel = fuel;
         this.seat = 5;
         this.gear = 0;
         this.dateManufacture = new Date();
+        this.category = category;
     }
 
     public void setManufacturer(String manufacturer) {
@@ -68,8 +70,16 @@ public class Car {
         return this.dateManufacture;
     }
 
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public String getCategory() {
+        return this.category;
+    }
+
     public static void main(String[] args) {
-        Car car = new Car("Ford", "black", "Gasoline");
-        System.out.println("Manufacturer " + car.getManufacturer() + " color " + car.getColor() + " fuel type " + car.getFuel() + " year manufacture " + car.dateManufacture);
+        Car car = new Car("Ford", "black", "Gasoline", "hatch");
+        System.out.println("Manufacturer " + car.getManufacturer() + " color " + car.getColor() + " fuel type " + car.getFuel() + " year manufacture " + car.dateManufacture + " category " + car.getCategory());
     }
 }
