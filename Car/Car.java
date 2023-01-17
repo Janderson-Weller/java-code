@@ -41,6 +41,14 @@ public class Car {
     public int getGear() {
         return this.gear;
     }
+
+    public void setFuel(String fuel) {
+        this.fuel = fuel;
+    }
+
+    public String getFuel(String fuel) {
+        return this.fuel;
+    }
 }
 
 
