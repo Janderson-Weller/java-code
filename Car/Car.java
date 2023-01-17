@@ -17,4 +17,20 @@ public class Car {
         this.seat = seat;
         this.gear = 0;
     }
+
+    public void setManufacturer(String manufacturer) {
+        this.manufacturer = manufacturer;
+    }
+
+    public String getManufacturer() {
+        return this.manufacturer;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getColor() {
+        return this.color;
+    }
 }
