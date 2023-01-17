@@ -60,6 +60,14 @@ public class Car {
         return this.seat;
     }
 
+    public void setDateManufacture(Date date) {
+        this.dateManufacture = date;
+    }
+
+    public Date getDateManufacture() {
+        return this.dateManufacture;
+    }
+
     public static void main(String[] args) {
         Car car = new Car("Ford", "black", "Gasoline");
         System.out.println("Manufacturer " + car.getManufacturer() + " color " + car.getColor() + " fuel type " + car.getFuel() + " year manufacture " + car.dateManufacture);
