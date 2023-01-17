@@ -10,7 +10,7 @@ public class Car {
     private boolean manualGear = true;
     private int seat;
     
-    public Car(String manufacturer, String color, String fuel, int seat){
+    public Car(String manufacturer, String color, String fuel){
         this.manufacturer =  manufacturer;
         this.color = color;
         this.fuel = fuel;
@@ -57,17 +57,9 @@ public class Car {
     public int getSeat() {
         return this.seat;
     }
-}
 
-
-
-
-
-
-
-
-
-
-
-    
+    public static void main(String[] args) {
+        Car car = new Car("Ford", "black", "Gasoline");
+        System.out.println("Manufacturer " + car.getManufacturer() + " color " + car.getColor() + " fuel type " + car.getFuel());
+    }
 }
