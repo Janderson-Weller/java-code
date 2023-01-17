@@ -1,6 +1,6 @@
 package Car;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class Car {
     private String manufacturer;
@@ -9,6 +9,7 @@ public class Car {
     private String fuel;
     private boolean manualGear = true;
     private int seat;
+    private Date dateManufacture;
     
     public Car(String manufacturer, String color, String fuel){
         this.manufacturer =  manufacturer;
@@ -16,6 +17,7 @@ public class Car {
         this.fuel = fuel;
         this.seat = 5;
         this.gear = 0;
+        this.dateManufacture = new Date();
     }
 
     public void setManufacturer(String manufacturer) {
@@ -60,6 +62,6 @@ public class Car {
 
     public static void main(String[] args) {
         Car car = new Car("Ford", "black", "Gasoline");
-        System.out.println("Manufacturer " + car.getManufacturer() + " color " + car.getColor() + " fuel type " + car.getFuel());
+        System.out.println("Manufacturer " + car.getManufacturer() + " color " + car.getColor() + " fuel type " + car.getFuel() + " year manufacture " + car.dateManufacture);
     }
 }
