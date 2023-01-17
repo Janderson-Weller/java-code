@@ -14,7 +14,7 @@ public class Car {
         this.manufacturer =  manufacturer;
         this.color = color;
         this.fuel = fuel;
-        this.seat = seat;
+        this.seat = 5;
         this.gear = 0;
     }
 
@@ -46,8 +46,16 @@ public class Car {
         this.fuel = fuel;
     }
 
-    public String getFuel(String fuel) {
+    public String getFuel() {
         return this.fuel;
+    }
+
+    public void setSeat(int seat) {
+        this.seat = seat;
+    }
+
+    public int getSeat() {
+        return this.seat;
     }
 }
 
