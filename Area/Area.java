@@ -1,4 +1,4 @@
-package JavaStart.Area;
+package Area;
 
 public class Area {
     public static void main(String[] args) {

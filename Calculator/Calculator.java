@@ -1,4 +1,4 @@
-package JavaStart.Calculator;
+package Calculator;
 
 public class Calculator {
     // Construtor default
