@@ -1,4 +1,4 @@
-package JavaStart.LogicalOperators;
+package LogicalOperators;
 
 import java.util.Scanner;
 
