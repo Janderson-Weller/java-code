@@ -1,4 +1,4 @@
-package JavaStart.Temperature;
+package Temperature;
 
 public class Temperature {
     public static void main(String[] args) {
